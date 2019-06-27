@@ -61,9 +61,6 @@ workflows:
             - test
           filters:
             tags:
-              only:
-                - /v[0-9]+\.[0-9]+\.[0-9]+/
-                - /v[0-9]+\.[0-9]+\.[0-9]+-rc\.[0-9]+/
-                - /v[0-9]+\.[0-9]+\.[0-9]+-redistributed\.[0-9]+/
+              only: /v[0-9]+\.[0-9]+\.[0-9]+.*/
             branches:
               ignore: /.*/
